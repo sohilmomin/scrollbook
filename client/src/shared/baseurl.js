@@ -1,1 +1,1 @@
-export const baseUrl = "https://scrollbook-api.onrender.com"
+export const baseUrl = "https://scrollbook-api.onrender.com/"
