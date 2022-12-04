@@ -27,7 +27,7 @@ router.post("/createpost", requireLogin, (req, res) => {
     }
 })
 
-router.get("/allPost", requireLogin, (req, res) => {
+router.get("/allPost", (req, res) => {
     Post.find()
         .populate("postedBy", "_id name pic")
         .populate("comments.postedBy", "_id name")
@@ -35,6 +35,7 @@ router.get("/allPost", requireLogin, (req, res) => {
         .then(posts => {
             if (posts) {
                 res.json({ posts })
+                console.log(posts)
             }
         })
         .catch(err => {
