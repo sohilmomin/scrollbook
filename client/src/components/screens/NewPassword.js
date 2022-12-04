@@ -36,7 +36,7 @@ const Signin = () => {
     return (
         <div className="mycard ">
             <div className='card authcard input-field'>
-                <h2>Instagram</h2>
+                <h2>ScrollBook</h2>
                 <input
                     type="password"
                     placeholder="Enter a new password"
